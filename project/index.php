@@ -1,4 +1,11 @@
+<?php include 'libraries/Database.php';  ?>
 <?php include 'includes/header.php';  ?>
+<?php include 'config/config.php';  ?>
+<?php 
+  $db = new Database();
+
+ ?>
+
           <div class="blog-post">
             <h2 class="blog-post-title">Sample blog post</h2>
             <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
