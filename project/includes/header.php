@@ -1,3 +1,6 @@
+<?php include 'libraries/Database.php';  ?>
+<?php include 'config/config.php';  ?>
+<?php include 'helpers/format_helper.php';  ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,7 +46,7 @@
     <div class="container">
 
       <div class="blog-header">
-        <div class="logo"><img src="images/logo.png" alt=""></div>
+        <div class="logo"><a href="index.php"><img src="images/logo.png" alt=""></a></div>
         <h3 class="blog-title">Welcome to Blog-Core</h3>
         <p class="lead blog-description">Just another blog that has basic features</p>
       </div>
