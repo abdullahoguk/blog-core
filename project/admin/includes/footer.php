@@ -5,7 +5,7 @@
     </div><!-- /.container -->
 
     <footer class="blog-footer">
-      <p><a href="http://kittencode.github.io/">KittenCode</a> &copy MMXV</p>
+      <p><a href="http://codeaia.github.io/">Codeaia</a> &copy MMXV</p>
       <?php echo $site_description; ?>
       <p>
         <a href="#">Back to top</a>

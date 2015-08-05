@@ -1,6 +1,18 @@
 <?php include '../libraries/Database.php';  ?>
 <?php include '../config/config.php';  ?>
 <?php include '../helpers/format_helper.php';  ?>
+
+<?php 
+
+  if(isset($_GET['msg'])){
+    //assign vars
+    $msg = $_GET['msg'];
+  }
+  else{
+    $msg = "Click Post Title or Category Name to edit. ";
+  }
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,6 +61,10 @@
         <div class="logo"><a href="index.php"><img src="/images/logo.png" alt=""></a></div>
         <h2>Admin Area</h2>
         <p>Here be dragons!</p>
+      </div>
+
+      <div>
+        <h3 class= "bg-success"><?php echo $msg; ?> &nbsp</h3>
       </div>
 
       <div class="row">

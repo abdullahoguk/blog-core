@@ -4,14 +4,18 @@
 $db = new Database();
   
 	if(isset($_GET['category'])){
-		$id = $_GET['category'];
+		$category = $_GET['category'];
 		//create query
-		$query = "SELECT * FROM posts WHERE id =".$id." ORDER BY id DESC";
+		$query = "SELECT * FROM posts 
+              		WHERE category = $category
+                  	ORDER BY date DESC";
+                  	
 		//run query
   		$posts = $db->select($query);
 	}
 	else{
-    	$query = "SELECT * FROM posts ORDER BY id DESC";
+    	$query = "SELECT * FROM posts 
+      				ORDER BY date DESC";
     	//run query
   		$posts = $db->select($query);
 	}
@@ -28,15 +32,12 @@ $db = new Database();
 
 <?php if($posts) : ?>
   <?php while($row = $posts->fetch_assoc()) : ?>
-
     <div class="blog-post">
             <h2 class="blog-post-title"><?php echo $row['title']; ?></h2>
             <p class="blog-post-meta"><?php echo formatDate($row['date']); ?> by <a href="#"><?php echo $row['author']; ?></a></p>
             <?php echo shortenText($row['body']); ?>
             <a class="readmore" href="post.php?id=<?php echo urlencode($row['id']); ?>">Read More</a>
         </div><!-- /.blog-post -->
-          
-
   <?php endwhile; ?>
 
 <?php else : ?>

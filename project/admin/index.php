@@ -8,7 +8,7 @@
 	$query = "SELECT posts.*, categories.name FROM posts 
 				INNER JOIN categories 
 				ON posts.category = categories.id 
-				ORDER BY id DESC";
+				ORDER BY date DESC";
 
 	//run query
 	$posts = $db->select($query);

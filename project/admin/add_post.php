@@ -46,7 +46,7 @@
     <label>Category</label>
 	<select name="category" class="form-control">
 		<?php while ($row = $categories->fetch_assoc()) :?>	
-				<option value="<?php echo $row['id'];?>">> <?php echo $row['name']; ?></option>
+				<option value="<?php echo $row['id'];?>"> <?php echo $row['name']; ?></option>
 		<?php endwhile; ?>
 	</select>  
 </div>
