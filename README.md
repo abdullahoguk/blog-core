@@ -1,4 +1,4 @@
-#[BlogCore] (http://abdullahoguk.byethost8.com/blogcore/) (Active)
+#[BlogCore] (http://abdullahoguk.ga/blogcore/) (Active)
 A blog that has main features.
   
 ![BlogCoress1](http://i.imgur.com/hGcTVLM.png)
